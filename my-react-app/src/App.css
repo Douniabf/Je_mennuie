@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Didact+Gothic&family=Monomaniac+One&display=swap');
+:root {
+    /* Couleurs principales */
+    --main-bg-color: #C8C6BF;
+    --main-bg-color-light: #FBFAFA;
+    --main-color-red: #ED4353;
+
+    --main-color-amuser: #FED440;
+    --main-color-inspirer: #49CEB9;
+    --main-color-apprendre: #FFC3A9;
+    --main-color-bg-button: #B9BBBB;
+
+    --main-color-text-light: #EEF1F0;
+    --main-color-text-dark: #969191;
+
+     /* Polices */
+
+    --main-titre-font-family: 'Dangrek', serif;
+    --button-font-family: 'Monomaniac One', sans-serif;
+    --p-font-famiily: 'Didact Gothic', sans-serif;
+
+     /* Titres et textes */
+
+    --titre-font-size: 2.5rem;
+    --button-font-size: 1.5rem;
+    --p-font-size: 1rem;
+    /*Espacements*/
+
+    --main-espace: 1rem;
+    --main-padding: calc(var(--main-espace) * 2);
+    --main-margin: calc(var(--main-espace) * 2);
+
+}
+
+* {
+    box-sizing: border-box;
+}
