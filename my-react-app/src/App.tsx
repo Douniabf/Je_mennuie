@@ -7,13 +7,12 @@ import SectionMeme from '../components/SectionMeme/SectionMeme'
 import ButtonRecharge from '../components/ButtonRecharge/ButtonRecharge';
 import axios from 'axios';
 
+
 function App() {
-  return(
-    <>
-      <Panneau/>
-
-    </>
-  );
+	return (
+		<>
+			<ButtonHome />
+		</>
+	);
 }
-
-export default App
+export default App;
