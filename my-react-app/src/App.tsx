@@ -10,7 +10,8 @@ import axios from 'axios';
 function App() {
   return(
     <>
-      <SectionMeme />
+      <Panneau/>
+
     </>
   );
 }
