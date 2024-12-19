@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 
-import './App.css';
-import ButtonHome from '../components/ButtonHome/ButtonHome';
+import './App.css'
 import Panneau from '../components/Panneau/Panneau'
 
 function App() {
   return (
     <>
-      <ButtonHome />
-      <Panneau />
+      <Panneau/>
     </>
   )
 }
