@@ -9,13 +9,13 @@
 }
 
 .panneau{    
-    width: 50%;               
+    width: 50%;
     max-width: 100%;        
     padding: 20%;          
     box-sizing: border-box;   
     background-color: #FBFAFA;           
     border-radius: 5px;       
-    position: relative;       
+    position: relative;
     box-shadow:  5px 5px 6px rgba(0, 0, 0, 0.3); 
 }
 

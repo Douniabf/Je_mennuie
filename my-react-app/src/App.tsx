@@ -1,18 +1,22 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './App.css';
-import ButtonHome from '../components/ButtonHome/ButtonHome';
-import Panneau from '../components/Panneau/Panneau'
-import SectionMeme from '../components/SectionMeme/SectionMeme'
-import ButtonRecharge from '../components/ButtonRecharge/ButtonRecharge';
+import ButtonHome from './components/ButtonHome/ButtonHome';
+import Panneau from './components/Panneau/Panneau';
+import SectionMeme from './components/SectionMeme/SectionMeme';
+import ButtonRecharge from './components/ButtonRecharge/ButtonRecharge';
 import axios from 'axios';
-import ThreeButtonsPage from "./ThreeButtonsPage/ThreeButtons";
+import ThreeButtonsPage from './components/ThreeButtonsPage/ThreeButtons';
+import PageLearn from '/pages/PageLearn';
 
 function App() {
 	return (
 		<>
-			<ButtonHome />
-      
+	  {/* <ButtonHome /> */}
+      {/* <Panneau/> */}
+	  {/* <ThreeButtonsPage/> */}
+	  <PageLearn/>
+	  {/* <SectionMeme/>  */}
 		</>
 	);
 }

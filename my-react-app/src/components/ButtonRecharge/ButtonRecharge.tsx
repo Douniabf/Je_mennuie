@@ -6,7 +6,7 @@ import SectionMeme from '../SectionMeme/SectionMeme';
 export default function ButtonRecharge({ onClick }) {
     return (
     <div>
-        <button className="button-recharge" onClick={()=> onClick}><img src='../assets/icon.png'/></button>
+        <button className="button-recharge" onClick={()=> location.reload()}><img src='../assets/icon.png'/></button>
     </div>
     );
 };
