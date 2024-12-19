@@ -1,16 +1,14 @@
-
 import React from "react";
-import './App.css';
+import "./App.css";
 
-import ButtonHome from '../components/ButtonHome/ButtonHome';
-import Panneau from '../components/Panneau/Panneau'
+import ButtonHome from "../components/ButtonHome/ButtonHome";
+import Panneau from "../components/Panneau/Panneau";
 
 function App() {
-  return (
-    <>
-      <ButtonHome />
-      
-    </>
-  )
+	return (
+		<>
+			<ButtonHome />
+		</>
+	);
 }
-export default App; 
+export default App;
