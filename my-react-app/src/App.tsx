@@ -1,12 +1,14 @@
+import React from "react";
 import "./App.css";
-import ThreeButtonsPage from "./ThreeButtonsPage/ThreeButtons";
+
+import ButtonHome from "../components/ButtonHome/ButtonHome";
+import Panneau from "../components/Panneau/Panneau";
 
 function App() {
 	return (
 		<>
-			<ThreeButtonsPage />
+			<ButtonHome />
 		</>
 	);
 }
-
 export default App;
