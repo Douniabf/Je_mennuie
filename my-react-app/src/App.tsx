@@ -1,11 +1,12 @@
-import './App.css'
+import "./App.css";
+import ThreeButtonsPage from "./ThreeButtonsPage/ThreeButtons";
 
 function App() {
-  return (
-    <>
-      
-    </>
-  )
+	return (
+		<>
+			<ThreeButtonsPage />
+		</>
+	);
 }
 
-export default App
+export default App;
