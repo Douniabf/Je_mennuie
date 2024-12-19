@@ -9,7 +9,7 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 export default function Panneau () {
   return (
     <div className="fond">
-      <article className="panneau">
+      <article className="panneau" id="patate">
         <FontAwesomeIcon className="vis1" icon={faCircleXmark} style={{color: "#ababab",}} />
         <FontAwesomeIcon className="vis2" icon={faCircleXmark} style={{color: "#ababab",}} />
         <FontAwesomeIcon className="vis3" icon={faCircleXmark} style={{color: "#ababab",}} />
