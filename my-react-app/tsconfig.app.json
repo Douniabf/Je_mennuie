@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "components/ThreeButtonsPage/ButtonActivity.tsx"]
+  "include": ["src"]
 }
