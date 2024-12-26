@@ -5,7 +5,7 @@ import './ButtonHome.css';
 export default function ButtonHome () {
   return(    
     <div className="button-home-container">
-      <Panneau />
+      <Panneau/>
       <div className="container">
         <div className="circle">
           <span className="text">Je m'ennuie</span>

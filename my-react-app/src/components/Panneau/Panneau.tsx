@@ -16,6 +16,7 @@ export default function Panneau () {
         <FontAwesomeIcon className="vis4" icon={faCircleXmark} style={{color: "#ababab",}} />
       </article>
       
+    
     </div>
   );
 };

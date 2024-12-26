@@ -12,7 +12,7 @@ const PageLearn = () => {
 
     return (
         <div className="page-container">
-            <Panneau />
+            <Panneau/>
             <div className="iframe-container">
                 <iframe
                     src="https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Page_au_hasard"
