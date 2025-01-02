@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./FetchPoem.css";
+import Panneau from "../../components/Panneau/Panneau";
 
 export default function DisplayPoem() {
 	const [poem, setPoem] = useState(null);
@@ -24,7 +25,7 @@ export default function DisplayPoem() {
 	}, []);
 
 	return (
-		<>
+		<Panneau>
 			{poem ? (
 				<div className="container-poem">
 					<h2>{poem.title}</h2>
@@ -34,6 +35,6 @@ export default function DisplayPoem() {
 			) : (
 				<p>Chargement d'un poème...</p>
 			)}
-		</>
+		</Panneau>
 	);
 }

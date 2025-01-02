@@ -1,16 +1,9 @@
-import React from "react";
 import "./App.css";
 
-import DisplayPoem from "./Pages/DisplayPoem";
-import Panneau from "../components/Panneau/Panneau";
+import { RouterProvider } from "react-router-dom";
+import router from "./Router/Router";
 
 function App() {
-	return (
-		<>
-			<Panneau>
-				<DisplayPoem />
-			</Panneau>
-		</>
-	);
+	return <RouterProvider router={router} />;
 }
 export default App;
