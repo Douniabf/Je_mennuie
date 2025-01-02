@@ -29,7 +29,6 @@
     --main-espace: 1rem;
     --main-padding: calc(var(--main-espace) * 2);
     --main-margin: calc(var(--main-espace) * 2);
-
 }
 
 * {
