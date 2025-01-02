@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './SectionMeme.css';
 import ButtonRecharge from '../ButtonRecharge/ButtonRecharge';
+import ButtonRetour from '../ButtonRetour/ButtonRetour';
 
 export default function SectionMeme () {
 const [meme, setMeme] = useState('https://static.demilked.com/wp-content/uploads/2024/09/random-memes-funny-5.jpeg');
@@ -38,7 +39,10 @@ const getMeme = async () => {
         )}
 
         </div>
-                <ButtonRecharge onClick={getMeme} />
+                <div className = "container_buttons">
+                <ButtonRecharge onClick={getMeme} className = ".button-recharge" />
+                <ButtonRetour onClick={getMeme} className = ".button-retour" />
+                </div>
         </div>
 
 );
