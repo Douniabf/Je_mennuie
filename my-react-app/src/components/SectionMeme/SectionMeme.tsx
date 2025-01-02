@@ -30,7 +30,7 @@ const getMeme = async () => {
         {meme ? (
         <img
             src={meme}
-            alt="Random Meme"
+        
             className="meme"
         />
         ) : (
