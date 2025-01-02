@@ -1,0 +1,21 @@
+.button-recharge {
+    width: 70px;
+    height: 70px;
+    background-color: var(--main-bg-color-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: none;
+    color: var(--main-color-text-light);
+    font-family: var(--button-font-family);
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 3px 3px 5px var(--main-color-text-dark);
+}
+
+.button-recharge:hover {
+    transform: translateY(-10%);
+
+}
