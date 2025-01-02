@@ -8,6 +8,7 @@ import ButtonRecharge from './components/ButtonRecharge/ButtonRecharge';
 import axios from 'axios';
 import ThreeButtonsPage from './components/ThreeButtonsPage/ThreeButtons';
 import PageLearn from './pages/PageLearn';
+import PaginationControls from './components/PaginationControls/PaginationControls';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 		{/* <Panneau/> */}
 		{/* <ThreeButtonsPage/> */}
 		<PageLearn />
+		{/* <PaginationControls/> */}
 		{/* <SectionMeme/>  */}
 		</>
 	);
