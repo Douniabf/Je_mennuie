@@ -63,18 +63,18 @@ const PageLearn = () => {
   return (
     <div className="container">
       <Panneau>
-        <div className="Api">
+        <div className="ApiLearn">
           {loading && <p>Chargement...</p>}
           {!loading && !error && pages[currentIndex]?.extract}
         </div>
       </Panneau>
       <div className="controls">
-        {/* <PaginationControls
+        { <PaginationControls
           onPrev={handlePrev}
           onNext={handleNext}
           disabledPrev={currentIndex <= 0 || loading}
           disabledNext={loading}
-        /> */}
+        /> }
         
       </div>
       
