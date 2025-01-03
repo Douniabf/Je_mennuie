@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import PaginationControls from "../components/PaginationControls/PaginationControls.js";
 import "../pages/PageLearn.css"
+import Panneau from "../components/Panneau/Panneau.js";
 
 type Page = {
   title: string;
@@ -61,18 +62,20 @@ const PageLearn = () => {
 
   return (
     <div className="container">
-      <div className="Api">
-        {loading && <p>Chargement...</p>}
-        {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
-        {!loading && !error && pages[currentIndex]?.extract}
-      </div>
+      <Panneau>
+        <div className="Api">
+          {loading && <p>Chargement...</p>}
+          {!loading && !error && pages[currentIndex]?.extract}
+        </div>
+      </Panneau>
       <div className="controls">
-        <PaginationControls
+        {/* <PaginationControls
           onPrev={handlePrev}
           onNext={handleNext}
           disabledPrev={currentIndex <= 0 || loading}
           disabledNext={loading}
-        />
+        /> */}
+        
       </div>
       
     </div>

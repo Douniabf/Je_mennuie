@@ -1,12 +1,4 @@
 
-.fond{    
-    display: flex;
-    justify-content: center; 
-    align-items: center;             
-    margin: 0;              
-    background-color: #C8C6BF;
-    padding: 1rem 0;
-}
 
 .panneau{           
     box-sizing: border-box;   
@@ -16,7 +8,7 @@
     box-shadow:  5px 5px 6px rgba(0, 0, 0, 0.3);
     width: 90vw;
     height: 95vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     padding: 3rem 1.5rem;
 }
 
