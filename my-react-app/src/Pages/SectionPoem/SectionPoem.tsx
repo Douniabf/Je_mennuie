@@ -5,7 +5,6 @@ import Panneau from "../../components/Panneau/Panneau";
 import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge";
 import ButtonRetour from "../../components/ButtonRetour/ButtonRetour";
 
-
 export default function DisplayPoem() {
 	const [poem, setPoem] = useState(null);
 
