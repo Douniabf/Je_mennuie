@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import "./FetchPoem.css";
 import Panneau from "../components/Panneau/Panneau";
 
-
 export default function DisplayPoem() {
 	const [poem, setPoem] = useState(null);
 
