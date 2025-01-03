@@ -18,3 +18,13 @@
     height: fit-content;
     padding: 40px 40px 40px 40px;
 }
+
+.container_buttons {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+
+}
