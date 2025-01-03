@@ -48,3 +48,13 @@ export default tseslint.config({
   },
 })
 ```
+
+
+## Pour la version n°2, lors de l'appel du fichier boutons. Mettre sa :
+
+<PaginationControls
+          onPrev={handlePrev}
+          onNext={handleNext}
+          disabledPrev={currentIndex <= 0 || loading}
+          disabledNext={loading}
+/>
