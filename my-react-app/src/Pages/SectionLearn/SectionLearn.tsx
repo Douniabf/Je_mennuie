@@ -1,7 +1,9 @@
 
 import React, { useState, useEffect } from "react";
-import PaginationControls from "../components/PaginationControls/PaginationControls.js";
-import "../pages/PageLearn.css"
+import PaginationControls from "../../components/PaginationControls/PaginationControls.js";
+import "./SectionLearn.css";
+import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge.js";
+import ButtonRetour from "../../components/ButtonRetour/ButtonRetour.js";
 
 type Page = {
   title: string;
@@ -36,19 +38,19 @@ const PageLearn = () => {
     }
   };
 
-  const handleNext = async () => {
-    if (currentIndex === pages.length - 1) {
-      const newPage = await fetchPage();
-      setPages((prevPages) => [...prevPages, newPage]);
-    }
-    setCurrentIndex((prevIndex) => prevIndex + 1);
-  };
+  // const handleNext = async () => {
+  //   if (currentIndex === pages.length - 1) {
+  //     const newPage = await fetchPage();
+  //     setPages((prevPages) => [...prevPages, newPage]);
+  //   }
+  //   setCurrentIndex((prevIndex) => prevIndex + 1);
+  // };
 
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((prevIndex) => prevIndex - 1);
-    }
-  };
+  // const handlePrev = () => {
+  //   if (currentIndex > 0) {
+  //     setCurrentIndex((prevIndex) => prevIndex - 1);
+  //   }
+  // };
 
   useEffect(() => {
     const loadInitialPage = async () => {
@@ -66,13 +68,17 @@ const PageLearn = () => {
         {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
         {!loading && !error && pages[currentIndex]?.extract}
       </div>
-      <div className="controls">
+      {/* <div className="controls">
         <PaginationControls
           onPrev={handlePrev}
           onNext={handleNext}
           disabledPrev={currentIndex <= 0 || loading}
           disabledNext={loading}
         />
+      </div> */}
+      <div className = "container_buttons">
+      <ButtonRecharge onClick={fetchPage} className = ".button-recharge" />
+      <ButtonRetour />
       </div>
       
     </div>
