@@ -4,6 +4,7 @@ import PaginationControls from "../../components/PaginationControls/PaginationCo
 import "./SectionLearn.css";
 import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge.js";
 import ButtonRetour from "../../components/ButtonRetour/ButtonRetour.js";
+import Panneau from "../../components/Panneau/Panneau.js";
 
 type Page = {
   title: string;
@@ -63,11 +64,12 @@ const PageLearn = () => {
 
   return (
     <div className="container">
-      <div className="Api">
-        {loading && <p>Chargement...</p>}
-        {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
-        {!loading && !error && pages[currentIndex]?.extract}
-      </div>
+        <Panneau>
+        <div className="ApiLearn">
+          {loading && <p>Chargement...</p>}
+          {!loading && !error && pages[currentIndex]?.extract}
+        </div>
+      </Panneau>
       {/* <div className="controls">
         <PaginationControls
           onPrev={handlePrev}

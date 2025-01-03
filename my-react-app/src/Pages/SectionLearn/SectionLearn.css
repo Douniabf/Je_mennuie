@@ -1,4 +1,4 @@
-.Api {
+.ApiLearn {
   width: 90%; 
   max-width: 440px;
   aspect-ratio: 1; /* Maintient un carré */
@@ -10,9 +10,10 @@
   padding: 10%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  margin-bottom: 20px;
-  text-align: center;
-  
+  text-align: center;  
+  margin: auto;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 }
 
 @media (max-width: 768px) {
