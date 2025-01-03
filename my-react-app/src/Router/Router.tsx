@@ -1,9 +1,9 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
-
-import ThreeButtonsPage from "../components/ThreeButtonsPage/ThreeButtons";
-import DisplayPoem from "../pages/DisplayPoem";
-import PageLearn from "../pages/PageLearn";
 import BodyColorChanger from "../components/BodyColorChanger/BodyColorChanger";
+import ButtonHome from "../Pages/ButtonHome/ButtonHome.tsx";import ThreeButtonsPage from "../components/ThreeButtonsPage/ThreeButtons.tsx";
+import SectionPoem from "../Pages/SectionPoem/SectionPoem.tsx";
+import SectionMeme from "../Pages/SectionMeme/SectionMeme.tsx";
+import SectionLearn from "../Pages/SectionLearn/SectionLearn.tsx";
 
 const Layout = () => (
   <>
@@ -17,17 +17,30 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />, // Layout doit contenir l'Outlet
     children: [
-      { path: "/", 
+	{
+		path: "/",
+		element: <ButtonHome />,
+	},
+    { 
+		path: "/home", 
 		element: <ThreeButtonsPage /> 
-	  },
-      { path: "/inspire", 
-		element: <DisplayPoem /> 
-	  },
-      { path: "/learn",
-		element: <PageLearn /> 
-	  },
+	},
+	{
+		path: "/laugh",
+		element: <SectionMeme />,
+	},
+	{
+		path: "/inspire",
+		element: <SectionPoem />,
+	},
+	{
+		path: "/learn",
+		element: <SectionLearn />,
+	}
+     
     ],
   },
+
 ]);
 
 export default router;
