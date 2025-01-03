@@ -3,30 +3,28 @@ import ButtonActivity from "../ButtonActivity";
 import "./ThreeButtonsPage.css";
 
 export default function ThreeButtonsPage() {
-	const boxShadowSettings = "2px 2px 6px";
-
 	return (
 		<>
 			<div className="container-buttons">
-				<Link to="/laugh">
+				<Link to="/laugh" className="link-item">
 					<ButtonActivity
 						idButton="fun-button"
 						choice="m'amuser"
-						style={{ color: "#ffe100", box_shadow: boxShadowSettings }}
+						style={{ color: "#ffe100" }}
 					/>
 				</Link>
-				<Link to="/inspire">
+				<Link to="/inspire" className="link-item">
 					<ButtonActivity
 						idButton="inspiration-button"
 						choice="m'inspirer"
-						style={{ color: "#09e0dd", box_shadow: boxShadowSettings }}
+						style={{ color: "#09e0dd" }}
 					/>
 				</Link>
-				<Link to="/learn">
+				<Link to="/learn" className="link-item">
 					<ButtonActivity
 						idButton="knowledge-button"
 						choice="apprendre"
-						style={{ color: "#fc03df", box_shadow: boxShadowSettings }}
+						style={{ color: "#fc03df" }}
 					/>
 				</Link>
 			</div>
