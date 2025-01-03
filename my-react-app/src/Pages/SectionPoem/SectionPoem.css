@@ -1,0 +1,14 @@
+.container-poem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.poem {
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    text-align: left; 
+}

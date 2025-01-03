@@ -1,10 +1,10 @@
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40em;
   background-color: #FC03DF;
-}
+} */
 
 .Api {
   width: 90%; 

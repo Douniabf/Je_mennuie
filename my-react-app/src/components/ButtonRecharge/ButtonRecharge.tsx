@@ -1,7 +1,7 @@
 import React from 'react';
 import './ButtonRecharge.css';
 import { useState, useEffect } from 'react';
-import SectionMeme from '../SectionMeme/SectionMeme';
+import SectionMeme from '../../Pages/SectionMeme/SectionMeme';
 
 export default function ButtonRecharge({ onClick }) {
     return (
