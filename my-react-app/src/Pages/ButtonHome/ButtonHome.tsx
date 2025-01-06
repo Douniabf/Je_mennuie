@@ -7,9 +7,8 @@ import "./ButtonHome.css";
 export default function ButtonHome() {
 	return (
 		<Panneau>
-		{/* <div className="button-home-container"> */}
 
-			<div className="container">
+			<div className="container-home">
 				<Link to = "/home" className="circle">
 					<span className="text">Je m'ennuie</span>
 				</Link>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ThreeButtonsPage.css";
-import ButtonActivity from "../../ButtonActivity";
+import ButtonActivity from "../ux_ui/ButtonActivity";
 
 export default function ThreeButtonsPage() {
 	return (

@@ -28,7 +28,7 @@ export default function DisplayPoem() {
 	}, []);
 
 	return (
-		<div>
+		<div className="pagePoem">
 			<Panneau>
 				{poem ? (
 					<div className="container-poem">

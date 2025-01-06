@@ -62,7 +62,7 @@ const PageLearn = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="pageLearn">
       <div className="Api">
         {loading && <p>Chargement...</p>}
         {/* {error && <p style={{ color: "red" }}>{error}</p>} */}

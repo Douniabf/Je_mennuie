@@ -30,3 +30,31 @@
     transform: translateY(0%);
     box-shadow: inset 5px 10px 15px black;
 }
+
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+    .text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
