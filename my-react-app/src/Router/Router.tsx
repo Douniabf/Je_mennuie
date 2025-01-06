@@ -1,14 +1,15 @@
 import { createBrowserRouter, } from "react-router-dom";
-import ButtonHome from "../Pages/ButtonHome/ButtonHome.tsx";
-import ThreeButtonsPage from "../components/ThreeButtonsPage/ThreeButtons.tsx";
+import ButtonHome from "../components/ButtonHome/ButtonHome.tsx";
+import ThreeButtonsPage from "../Pages/ThreeButtonsPage/ThreeButtons.tsx";
 import SectionPoem from "../Pages/SectionPoem/SectionPoem.tsx";
 import SectionMeme from "../Pages/SectionMeme/SectionMeme.tsx";
 import SectionLearn from "../Pages/SectionLearn/SectionLearn.tsx";
+import PageLaunch from "../Pages/PageLaunch/PageLaunch.tsx";
 
 const router = createBrowserRouter([ 
 	{
 		path: "/",
-		element: <ButtonHome />,
+		element: <PageLaunch />,
 	},
     { 
 		path: "/home", 
