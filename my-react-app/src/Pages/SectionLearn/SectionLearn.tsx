@@ -4,6 +4,7 @@ import PaginationControls from "../../components/PaginationControls/PaginationCo
 import "./SectionLearn.css";
 import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge.js";
 import ButtonRetour from "../../components/ButtonRetour/ButtonRetour.js";
+import Panneau from "../../components/Panneau/Panneau.js";
 
 type Page = {
   title: string;

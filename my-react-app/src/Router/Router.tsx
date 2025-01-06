@@ -1,20 +1,18 @@
-import { createBrowserRouter } from "react-router-dom";
-
-
+import { createBrowserRouter, } from "react-router-dom";
 import ButtonHome from "../Pages/ButtonHome/ButtonHome.tsx";
 import ThreeButtonsPage from "../components/ThreeButtonsPage/ThreeButtons.tsx";
 import SectionPoem from "../Pages/SectionPoem/SectionPoem.tsx";
 import SectionMeme from "../Pages/SectionMeme/SectionMeme.tsx";
 import SectionLearn from "../Pages/SectionLearn/SectionLearn.tsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter([ 
 	{
 		path: "/",
 		element: <ButtonHome />,
 	},
-	{
-		path: "/home",
-		element: <ThreeButtonsPage />,
+    { 
+		path: "/home", 
+		element: <ThreeButtonsPage /> 
 	},
 	{
 		path: "/laugh",
@@ -27,7 +25,8 @@ const router = createBrowserRouter([
 	{
 		path: "/learn",
 		element: <SectionLearn />,
-	}
+	} 
+
 ]);
 
 export default router;
