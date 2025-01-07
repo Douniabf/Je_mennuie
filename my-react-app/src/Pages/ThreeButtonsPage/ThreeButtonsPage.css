@@ -1,0 +1,65 @@
+.button-activity {
+    width: 65%;
+    height: 5rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 4rem;
+    border: none;
+    font-family: "Monomaniac One";
+    background-color: #E3E3E3;
+    color: #969191;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.button-activity:active {
+    transform: translate(4px, 4px);
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+}
+
+.link-item {
+    text-align: center;
+    width: 100%;
+}
+
+#fun-button {
+    box-shadow: #ffe100 2px 2px 6px;
+}
+
+#fun-button:active {
+    box-shadow: none;
+}
+
+#inspiration-button {
+    box-shadow: #09e0dd 2px 2px 6px;
+}
+
+#inspiration-button:active {
+    box-shadow: none;
+}
+
+#knowledge-button {
+    box-shadow: #fc03df 2px 2px 6px;
+}
+
+#knowledge-button:active {
+    box-shadow: none;
+}
+
+
+@media screen and (width > 768px){
+    .button-activity {
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+}
+
