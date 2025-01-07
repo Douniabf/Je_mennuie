@@ -36,7 +36,7 @@ const PageLearn = () => {
 				</div>
 			</div>
           ) : (
-			<p>Chargement d'un poème...</p>
+			<p>Chargement d'une page Wikipédia...</p>
 		  )}
        
       </Panneau>
