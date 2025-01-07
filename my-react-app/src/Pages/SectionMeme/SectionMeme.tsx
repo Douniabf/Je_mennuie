@@ -7,7 +7,7 @@ import ButtonRetour from '../../components/ButtonRetour/ButtonRetour';
 import Panneau from '../../components/Panneau/Panneau';
 
 export default function SectionMeme () {
-const [meme, setMeme] = useState('https://static.demilked.com/wp-content/uploads/2024/09/random-memes-funny-5.jpeg');
+const [meme, setMeme] = useState(null);
 
 const [limitReached, setLimitReached] = useState(false);
 
@@ -52,7 +52,7 @@ useEffect(() => {
             <Panneau>
                 <div className = "container-meme">
                     {limitReached ? (<p className = "text-meme">Vous avez épuisé le stock des memes ! 😬 Revenez demain pour la nouvelle portion de fun.</p>) 
-                    : meme.startsWith('https://') ? (
+                    : meme ? (
                         <img src={meme} className="img-meme" />
                     ) : (
                         <p>Chargement du mème...</p>)
