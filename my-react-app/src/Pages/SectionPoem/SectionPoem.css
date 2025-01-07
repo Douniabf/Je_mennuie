@@ -25,8 +25,16 @@
 }
 
 .poem {
+    margin-top: 3rem;
+    font-size: var(--p-font-size);
     white-space: pre-wrap;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     text-align: left;
+    line-height: 20px;
+}
+
+.poem-author {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
 }
