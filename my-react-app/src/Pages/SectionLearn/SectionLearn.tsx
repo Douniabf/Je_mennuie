@@ -19,6 +19,19 @@ const PageLearn = () => {
       setError(err.message);
     }
   };
+  // const handleNext = async () => {
+	//   if (currentIndex === pages.length - 1) {
+	//     const newPage = await fetchPage();
+	//     setPages((prevPages) => [...prevPages, newPage]);
+	//   }
+	//   setCurrentIndex((prevIndex) => prevIndex + 1);
+	// };
+
+	// const handlePrev = () => {
+	//   if (currentIndex > 0) {
+	//     setCurrentIndex((prevIndex) => prevIndex - 1);
+	//   }
+	// };
 
   useEffect(() => {
     fetchPage();
@@ -39,6 +52,14 @@ const PageLearn = () => {
 			<p>Chargement d'une page Wikipédia...</p>
 		  )}
        
+	   	{/* <div className="controls">
+			<PaginationControls
+			onPrev={handlePrev}
+			onNext={handleNext}
+			disabledPrev={currentIndex <= 0 || loading}
+			disabledNext={loading}
+			/>
+         </div> */}
       </Panneau>
       <div className="container_buttons">
         <ButtonRecharge onClick={fetchPage} />
