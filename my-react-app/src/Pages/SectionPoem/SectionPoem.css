@@ -1,8 +1,26 @@
-.container-poem {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.pagePoem {
+    background-color: var(--main-color-inspirer);
+    width: 100%;  
+    height: 100vh;
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.container-poem {
+    max-width: 440px;
+    aspect-ratio: 1;
+    background-color: #ffffff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding: 1rem;
     
 }
 
@@ -10,5 +28,5 @@
     white-space: pre-wrap;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
-    text-align: left; 
+    text-align: left;
 }

@@ -5,7 +5,6 @@ import Panneau from "../../components/Panneau/Panneau";
 import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge";
 import ButtonRetour from "../../components/ButtonRetour/ButtonRetour";
 
-
 export default function DisplayPoem() {
 	const [poem, setPoem] = useState(null);
 
@@ -28,7 +27,7 @@ export default function DisplayPoem() {
 	}, []);
 
 	return (
-		<div>
+		<div className="pagePoem">
 			<Panneau>
 				{poem ? (
 					<div className="container-poem">

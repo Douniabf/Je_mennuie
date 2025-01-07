@@ -7,37 +7,67 @@ import ButtonRetour from '../../components/ButtonRetour/ButtonRetour';
 import Panneau from '../../components/Panneau/Panneau';
 
 export default function SectionMeme () {
-const [meme, setMeme] = useState('https://static.demilked.com/wp-content/uploads/2024/09/random-memes-funny-5.jpeg');
+const [meme, setMeme] = useState(null);
+
+const [limitReached, setLimitReached] = useState(false);
 
 const getMeme = async () => {
-    console.log('Button clicked');
-    try { 
-        const response = await axios.get('https://api.humorapi.com/memes/random?api-key=bb880476fe7f45669c001bb019a8c220')
-        console.log(response);
-        setMeme(response.data.url);
+    try {
+        const response = await axios.get('https://api.humorapi.com/memes/random?api-key=bb880476fe7f45669c001bb019a8c220');
+        if (response.data.error && response.data.error.includes('limit')) {
+            setLimitReached(true);
+        } else {
+            setMeme(response.data.url);
+            setLimitReached(false);
+        }
     }
     catch (error) {
         console.error('Error fetching data: ', error);
+        setLimitReached(true);
     }
-    };
-    console.log(meme);
-
-    useEffect(() => {
+};
+useEffect(() => {
     getMeme();
-    }, []);
+}, []);
+
+// const getMeme = async () => {
+//     console.log('Button clicked');
+//     try { 
+//         const response = await axios.get('https://api.humorapi.com/memes/random?api-key=bb880476fe7f45669c001bb019a8c220')
+//         console.log(response);
+//         setMeme(response.data.url);
+//     }
+//     catch (error) {
+//         console.error('Error fetching data: ', error);
+//     }
+//     };
+//     console.log(meme);
+
+//     useEffect(() => {
+//     getMeme();
+//     }, []);
 
     return (
             <div className = "pageMeme">
             <Panneau>
-        {meme ? (
+                <div className = "container-meme">
+                    {limitReached ? (<p className = "text-meme">Vous avez épuisé le stock des memes ! 😬 Revenez demain pour la nouvelle portion de fun.</p>) 
+                    : meme ? (
+                        <img src={meme} className="img-meme" />
+                    ) : (
+                        <p>Chargement du mème...</p>)
+                    
+                    }
+        {/* {meme ? (
         <img
             src={meme}
         
-            className="meme"
+            className="img-meme"
         />
         ) : (
         <p>Chargement du mème...</p>
-        )}
+        )} */}
+        </div>
 
 </Panneau>
                 <div className = "container_buttons">

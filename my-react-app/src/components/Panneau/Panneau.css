@@ -1,25 +1,29 @@
 .panneau{           
     box-sizing: border-box;   
-    background-color: #FBFAFA;           
+    background-color: #FBFAFA;
     border-radius: 5px;       
     position: relative;       
     box-shadow:  5px 5px 6px rgba(0, 0, 0, 0.3);
     width: 90vw;
     padding: 3rem 1.5rem;
-    margin: 2rem;
+    /* margin: 2rem auto; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
 }
 
-.panneau .vis1,
-.panneau .vis2,
-.panneau .vis3,
-.panneau .vis4 {
+.vis1,
+ .vis2,
+ .vis3,
+ .vis4 {
     position: absolute;
     font-size: 24px;        
     color: #ababab;
 }
 
-
 .vis1 { top: 10px; left: 10px; }      
 .vis2 { top: 10px; right: 10px; }    
 .vis3 { bottom: 10px; left: 10px; } 
-.vis4 { bottom: 10px; right: 10px; }  
+.vis4 { bottom: 10px; right: 10px; }
