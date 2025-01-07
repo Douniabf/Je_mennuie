@@ -1,13 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-import Panneau from "../Panneau/Panneau";
+import { useNavigate } from "react-router-dom";
 import "./ButtonHome.css";
 
 export default function ButtonHome() {
+
+	const navigate = useNavigate();
+
+	const handleClick = () => {
+		document.querySelector('.circle').classList.add('circleAnimation');
+		setTimeout(() => {
+			navigate('/home');
+		}, 2000);
+	}
+
 	return (
-				<Link to = "/home" className="circle">
-					<span className="text">Je m'ennuie</span>
-				</Link>
+		<a className="circle" onClick={() => handleClick()}>
+			<span className="text">Je m'ennuie</span>
+		</a>
 	);
 }

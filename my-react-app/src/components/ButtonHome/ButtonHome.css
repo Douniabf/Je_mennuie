@@ -17,9 +17,10 @@ html, body {
     transition: all 0.3s;
     text-decoration: none;
     box-shadow: 7px 7px 10px gray;    
-    animation: morphZoom 2s ease-out;
-    
-        
+}
+
+.circleAnimation {
+    animation: morphDezoom 2s ease-out;
 }
 
 .text {
@@ -29,7 +30,14 @@ html, body {
     margin: var(--main-margin);
     font-weight: bold;
     text-decoration: none;
-}    
+}   
+
+.button 
+{
+    text-decoration: none;
+    background: none;
+    border: none;
+}
 
 
 .circle:active {
@@ -65,19 +73,16 @@ html, body {
     }
 }
 
-
-@keyframes morphZoom {
+@keyframes morphDezoom {
     0% {
-        transform: scale(8) rotate(0deg);
+        transform: scale(1) rotate(0deg);
         opacity: 0;
     }
     10% {
         opacity: 1;
     }
     100% {
-        transform: scale(1) rotate(360deg);
+        transform: scale(8) rotate(360deg);
         opacity: 1;
     }
 }
-
-
