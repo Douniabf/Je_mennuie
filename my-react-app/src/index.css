@@ -21,7 +21,7 @@
 
      /* Titres et textes */
 
-    --titre-font-size: 2.5rem;
+    --titre-font-size: 2rem;
     --button-font-size: 1.5rem;
     --p-font-size: 1rem;
     /*Espacements*/
@@ -43,8 +43,4 @@ body {
     color: var(--main-color-text-dark);
     align-items: center;
     height: 100vh;
-}
-
-.grey{
-    background-color: gray;
 }
