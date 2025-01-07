@@ -14,10 +14,10 @@
     max-width: 768px;
 }
 
-.panneau .vis1,
-.panneau .vis2,
-.panneau .vis3,
-.panneau .vis4 {
+.vis1,
+ .vis2,
+ .vis3,
+ .vis4 {
     position: absolute;
     font-size: 24px;        
     color: #ababab;
