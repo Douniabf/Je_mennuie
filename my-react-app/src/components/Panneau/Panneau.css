@@ -6,12 +6,15 @@
     box-shadow:  5px 5px 6px rgba(0, 0, 0, 0.3);
     width: 90vw;
     padding: 3rem 1.5rem;
-    /* margin: 2rem auto; */
-    margin-top: 2rem;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 768px;
+}
+
+.panneau-content {
+    padding: 1rem;
 }
 
 .vis1,
