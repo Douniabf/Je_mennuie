@@ -1,5 +1,5 @@
 import { createBrowserRouter, } from "react-router-dom";
-import ButtonHome from "../components/ButtonHome/ButtonHome.tsx";
+import ButtonHome from "../components/ui/ButtonHome/ButtonHome.tsx";
 import ThreeButtonsPage from "../Pages/ThreeButtonsPage/ThreeButtons.tsx";
 import SectionPoem from "../Pages/SectionPoem/SectionPoem.tsx";
 import SectionMeme from "../Pages/SectionMeme/SectionMeme.tsx";

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './SectionMeme.css';
-import ButtonRecharge from '../../components/ButtonRecharge/ButtonRecharge';
-import ButtonRetour from '../../components/ButtonRetour/ButtonRetour';
+import ButtonRecharge from '../../components/ui/ButtonRecharge/ButtonRecharge';
+import ButtonRetour from '../../components/ui/ButtonRetour/ButtonRetour';
 import Panneau from '../../components/Panneau/Panneau';
 
 export default function SectionMeme () {

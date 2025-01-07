@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./SectionPoem.css";
 import Panneau from "../../components/Panneau/Panneau";
-import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge";
-import ButtonRetour from "../../components/ButtonRetour/ButtonRetour";
+import ButtonRecharge from "../../components/ui/ButtonRecharge/ButtonRecharge";
+import ButtonRetour from "../../components/ui/ButtonRetour/ButtonRetour";
 
 export default function DisplayPoem() {
 	const [poem, setPoem] = useState(null);
