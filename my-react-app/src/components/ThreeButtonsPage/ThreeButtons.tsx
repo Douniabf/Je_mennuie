@@ -10,7 +10,7 @@ export default function ThreeButtonsPage() {
 					<ButtonActivity
 						idButton="fun-button"
 						choice="m'amuser"
-						style={{ color: "#ffe100" }}
+						style={{ color: "#f7b307" }}
 					/>
 				</Link>
 				<Link to="/inspire" className="link-item">

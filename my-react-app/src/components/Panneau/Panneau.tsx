@@ -5,8 +5,8 @@ import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Panneau({ children }) {
 	return (
-		<div className="fond">
-			<article className="panneau" id="patate">
+		<div className="background-panneau">
+			<article className="panneau">
 				<div className="screws-top">
 					<FontAwesomeIcon
 						className="vis1"
