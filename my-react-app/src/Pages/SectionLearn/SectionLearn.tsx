@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge.js";
-import ButtonRetour from "../../components/ButtonRetour/ButtonRetour.js";
+import ButtonRecharge from "../../components//ui/ButtonRecharge/ButtonRecharge.js";
+import ButtonRetour from "../../components/ui/ButtonRetour/ButtonRetour.js";
 import Panneau from "../../components/Panneau/Panneau.js";
 import "./SectionLearn.css";
 
