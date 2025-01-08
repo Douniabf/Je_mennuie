@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import "./ThreeButtonsPage.css";
-import ButtonActivity from "../../components/ux_ui/ButtonActivity";
+import Panneau from "../../components/Panneau/Panneau";
+import ButtonActivity from "../../components/ui/ButtonActivity";
 
 export default function ThreeButtonsPage() {
 	return (
-		<>
+		<Panneau>
 			<div className="container-buttons">
 				<Link to="/laugh" className="link-item">
 					<ButtonActivity
@@ -28,7 +29,7 @@ export default function ThreeButtonsPage() {
 					/>
 				</Link>
 			</div>
-		</>
+		</Panneau>
 	);
 }
 

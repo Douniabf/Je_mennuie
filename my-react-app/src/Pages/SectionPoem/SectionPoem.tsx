@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./SectionPoem.css";
 import Panneau from "../../components/Panneau/Panneau";
-import ButtonRecharge from "../../components/ButtonRecharge/ButtonRecharge";
-import ButtonRetour from "../../components/ButtonRetour/ButtonRetour";
+import ButtonRecharge from "../../components/ui/ButtonRecharge/ButtonRecharge";
+import ButtonRetour from "../../components/ui/ButtonRetour/ButtonRetour";
 
 export default function DisplayPoem() {
 	const [poem, setPoem] = useState(null);
@@ -13,11 +13,11 @@ export default function DisplayPoem() {
 			const response = await axios.get("https://poetrydb.org/random");
 			const data = response.data;
 
-			// console.log("data.poem 0 -->", data[1]);
-			// console.log("data -->", data[0].lines);
+			console.log("data -->", data);
+			console.log("data index 0 -->", data[0]);
+			console.log("poem lines -->", data[0].lines);
 			setPoem(data[0]);
 		} catch (error) {
-			// Gestion des erreurs en cas de problème avec la requête
 			console.error("Erreur lors de la récupération des poèmes :", error);
 		}
 	};
@@ -31,8 +31,8 @@ export default function DisplayPoem() {
 			<Panneau>
 				{poem ? (
 					<div className="container-poem">
-						<h2>{poem.title}</h2>
-						<h3>by {poem.author}</h3>
+						<h1 className="poem-title">{poem.title}</h1>
+						<h2 className="poem-author">by {poem.author}</h2>
 						<pre className="poem">{poem.lines.join("\n")}</pre>
 					</div>
 				) : (
