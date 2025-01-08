@@ -20,7 +20,7 @@ html, body {
 }
 
 .circleAnimation {
-    animation: morphDezoom 2s ease-out;
+    animation: morphDezoom 3s ease-out;
 }
 
 .text {

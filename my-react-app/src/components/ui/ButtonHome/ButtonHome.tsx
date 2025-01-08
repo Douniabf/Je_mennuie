@@ -9,7 +9,7 @@ export default function ButtonHome() {
 		document.querySelector('.circle').classList.add('circleAnimation');
 		setTimeout(() => {
 			navigate('/home');
-		}, 2000);
+		}, 3000);
 	}
 
 	return (

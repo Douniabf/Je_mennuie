@@ -6,14 +6,15 @@ import ButtonRetour from '../../components/ui/ButtonRetour/ButtonRetour';
 import Panneau from '../../components/Panneau/Panneau';
 
 export default function SectionMeme () {
-const apiKey = process.env.REACT_APP_HUMOR_API_KEY;
-const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/memes/random?api-key=${apiKey}`;
+const apiKey = import.meta.env.VITE_APP_HUMOR_API_KEY;
+const apiUrl = `${import.meta.env.VITE_APP_API_BASE_URL}/memes/random?api-key=${apiKey}`;
 
 const [meme, setMeme] = useState(null);
-
 const [limitReached, setLimitReached] = useState(false);
+const [loading, setLoading] = useState(false);
 
 const getMeme = async () => {
+    setLoading(true)
     try {
         const response = await axios.get(apiUrl);
         if (response.data.error && response.data.error.includes('limit')) {
@@ -26,6 +27,8 @@ const getMeme = async () => {
     catch (error) {
         console.error('Error fetching data: ', error);
         setLimitReached(true);
+    } finally {
+        setLoading(false);
     }
 };
 useEffect(() => {
@@ -36,10 +39,15 @@ return (
     <div className = "pageMeme">
         <Panneau>
             <div className = "container-meme">
-                {limitReached ? (<p className = "text-meme">Vous avez épuisé le stock des memes ! 😬 Revenez demain pour la nouvelle portion de fun.</p>) 
+                {limitReached ? (
+                    <p className = "text-meme">Vous avez épuisé le stock des memes ! 😬 Revenez demain pour la nouvelle portion de fun.
+                    </p>) 
+                    : loading ? (
+                        <p>Chargement du mème...</p>
+                    )
                 : meme ? (
                     <img src={meme} className="img-meme" alt="Un meme généré aléatoirement" />
-                    ) : (<p>Chargement du mème...</p>)
+                    ) : (<p>Aucun mème est disponible</p>)
                 }
             </div>
         </Panneau>
