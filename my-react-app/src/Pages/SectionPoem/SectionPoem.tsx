@@ -13,11 +13,11 @@ export default function DisplayPoem() {
 			const response = await axios.get("https://poetrydb.org/random");
 			const data = response.data;
 
-			console.log("data.poem 0 -->", data);
-			console.log("data -->", data[0].lines);
+			console.log("data -->", data);
+			console.log("data index 0 -->", data[0]);
+			console.log("poem lines -->", data[0].lines);
 			setPoem(data[0]);
 		} catch (error) {
-			// Gestion des erreurs en cas de problème avec la requête
 			console.error("Erreur lors de la récupération des poèmes :", error);
 		}
 	};
