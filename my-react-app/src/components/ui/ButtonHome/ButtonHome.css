@@ -21,6 +21,7 @@ html, body {
 
 .circleAnimation {
     animation: morphDezoom 2s ease-out;
+  
 }
 
 .text {
