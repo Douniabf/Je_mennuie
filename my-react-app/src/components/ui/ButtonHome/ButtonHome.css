@@ -16,7 +16,7 @@ html, body {
     cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
-    box-shadow: 7px 7px 10px gray;    
+    box-shadow: 7px 7px 10px gray;
 }
 
 .circleAnimation {
