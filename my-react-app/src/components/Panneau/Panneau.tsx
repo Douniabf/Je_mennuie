@@ -7,7 +7,6 @@ export default function Panneau({ children }) {
 	return (
 		<div className="background-panneau">
 			<article className="panneau">
-				<div className="screws-top">
 					<FontAwesomeIcon
 						className="vis1"
 						icon={faCircleXmark}
@@ -18,9 +17,7 @@ export default function Panneau({ children }) {
 						icon={faCircleXmark}
 						style={{ color: "#ababab" }}
 					/>
-				</div>
-				<div className="panneau-content">{children}</div>
-				<div className="screws-bottom">
+				
 					<FontAwesomeIcon
 						className="vis3"
 						icon={faCircleXmark}
@@ -31,7 +28,7 @@ export default function Panneau({ children }) {
 						icon={faCircleXmark}
 						style={{ color: "#ababab" }}
 					/>
-				</div>
+				<div className="panneau-content">{children}</div>
 			</article>
 		</div>
 	);
